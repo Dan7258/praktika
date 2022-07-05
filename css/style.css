@@ -15,19 +15,30 @@
 
 .logos {
     margin-left: 100px;
+    display: flex;
 }
 
 .logos [alt="МАИ"] {
-    margin-left: 200px;
+    margin-left: 100px;
     box-shadow: black ;
+}
+
+.mai_descr {
+    padding-top: 10px;
+    margin-left: 30px;
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-shadow: black 0 0 40px;
 }
 
 .navigation {
     margin-right: 0px;
     height: 31px;
     color: #3b4754;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -46,8 +57,7 @@
 
 .navigation li a {
     color: white;
-    text-shadow: black 0 0 10px;
-
+    text-shadow: black 0 0 30px;
 }
 
 .section {
