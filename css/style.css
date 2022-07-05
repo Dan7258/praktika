@@ -1,0 +1,55 @@
+@import url("../fonts/fonts.css");
+@import url("../css/nullstyle.css");
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    background: rgb(196,194,236);
+    background: radial-gradient(circle, rgba(196,194,236,1) 0%, rgba(133,154,238,1) 15%, rgba(21,137,221,1) 62%, rgba(22,134,220,1) 65%, rgba(39,69,206,1) 93%, rgba(40,65,205,1) 98%);
+}
+
+.header img {
+    height: 87px;
+}
+
+.logos {
+    margin-left: 100px;
+}
+
+.logos [alt="МАИ"] {
+    margin-left: 200px;
+    box-shadow: black ;
+}
+
+.navigation {
+    margin-right: 0px;
+    height: 31px;
+    color: #3b4754;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation li {
+    display: inline;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 150px;
+}
+
+.navigation li:last-child{
+    margin-right: 0;
+}
+
+.navigation li a {
+    color: white;
+    text-shadow: black 0 0 10px;
+
+}
+
+.section {
+    
+}
