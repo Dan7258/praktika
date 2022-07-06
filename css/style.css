@@ -3,14 +3,20 @@
 
 * {
     font-family: 'Rubik', sans-serif;
+    color:white;
+}
+.container {
+    padding: 25px 121px;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 50px;
     background: rgb(196,194,236);
     background: radial-gradient(circle, rgba(196,194,236,1) 0%, rgba(133,154,238,1) 15%, rgba(21,137,221,1) 62%, rgba(22,134,220,1) 65%, rgba(39,69,206,1) 93%, rgba(40,65,205,1) 98%);
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header img {
@@ -18,40 +24,38 @@
 }
 
 .logos {
-    margin-left: 100px;
     display: flex;
 }
 
 .logos [alt="МАИ"] {
-    margin-left: 100px;
+    margin-left: 80px;
     box-shadow: black ;
 }
 
 .mai_descr {
     padding-top: 10px;
-    margin-left: 30px;
+    margin-left: 32px;
     font-size: 22px;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
     text-shadow: black 0 0 40px;
 }
 
 .navigation {
-    margin-right: 0px;
     height: 31px;
     color: #3b4754;
     font-family: 'Rubik', sans-serif;
     font-size: 24px;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    width: 650px;
+    justify-content: space-between;
 }
 
 .navigation li {
     display: inline;
     list-style-type: none;
     margin-top: 30px;
-    margin-right: 150px;
+
 }
 
 .navigation li:last-child{
@@ -59,29 +63,106 @@
 }
 
 .navigation li a {
-    color: white;
     text-shadow: black 0 0 30px;
 }
 
 .section {
-    padding: 35px;
     background: rgb(40, 38, 38) no-repeat center/100% url('../img/mai_square.jpg');
     background-blend-mode: overlay;
-    height: 84%;
+    height: 85.5%;
 }
 
-.section_subheader, .section_header{
-    color: white;
+.section_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.section_subheader, .section_header, .section_partners{
     text-transform: uppercase;
     font-size: 50px;
     text-shadow: rgb(0, 166, 255) 0px 0px 25px;
     text-align: center;
-    margin-left: 120px;
 }
 
 .section_subheader {
     text-align: left;
-    margin-left: 145px;
-    margin-top: 20px;
     font-size: 45px;
+}
+
+.section_pros li {
+    margin-left: 20px;
+    width: 550px;
+    list-style-type: none;
+    position: relative;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.section_pros li::before {
+    content: '•';
+    left: -20px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.section_imgs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 800px;
+}
+
+.section_imgs figcaption {
+    width: 400px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.section_imgs img {
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 25px;
+}
+
+.section_partners {
+    font-size: 45px;
+}
+
+.circles {
+    margin-top: 24px;
+    margin-left: 20px;
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.circle {
+    overflow: hidden;
+    margin-left: 7.5ex;
+    text-align: center;
+    background: white;
+    border: 0.1875em solid black;
+    border-radius: 50%;
+    box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+    height: 15ex;
+    width: 15ex;
+}
+
+.circle img {
+    width: 75%;
+    margin-top: 10%;
+}
+.circle img[alt='вуз'] {
+    margin-top: 18%;
+}
+
+.circles_card {
+    text-align: center;
+}
+
+.circle_descr {
+    margin-top: 10px;
+    width: 30ex;
 }
