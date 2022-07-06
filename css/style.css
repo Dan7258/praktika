@@ -1,6 +1,10 @@
 @import url("../fonts/fonts.css");
 @import url("../css/nullstyle.css");
 
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -27,7 +31,6 @@
     padding-top: 10px;
     margin-left: 30px;
     font-size: 22px;
-    font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     text-shadow: black 0 0 40px;
@@ -61,5 +64,24 @@
 }
 
 .section {
-    
+    padding: 35px;
+    background: rgb(40, 38, 38) no-repeat center/100% url('../img/mai_square.jpg');
+    background-blend-mode: overlay;
+    height: 84%;
+}
+
+.section_subheader, .section_header{
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-shadow: rgb(0, 166, 255) 0px 0px 25px;
+    text-align: center;
+    margin-left: 120px;
+}
+
+.section_subheader {
+    text-align: left;
+    margin-left: 145px;
+    margin-top: 20px;
+    font-size: 45px;
 }
