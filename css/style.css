@@ -78,14 +78,20 @@
     margin-top: 20px;
 }
 
+.section_header {
+    margin-top: 25px;
+}
+
 .section_subheader, .section_header, .section_partners{
     text-transform: uppercase;
     font-size: 50px;
     text-shadow: rgb(0, 166, 255) 0px 0px 25px;
     text-align: center;
+    margin-top: 25px;
 }
 
 .section_subheader {
+    text-shadow: rgb(0, 255, 128) 0px 0px 25px;
     text-align: left;
     font-size: 45px;
 }
@@ -127,6 +133,7 @@
 }
 
 .section_partners {
+    text-shadow: rgb(0, 255, 128) 0px 0px 25px;
     font-size: 45px;
 }
 
