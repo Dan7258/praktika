@@ -78,11 +78,9 @@
     margin-top: 20px;
 }
 
-.section_header {
-    margin-top: 25px;
-}
 
 .section_subheader, .section_header, .section_partners{
+    text-shadow: white 0 0 14px;
     text-transform: uppercase;
     font-size: 50px;
     text-align: center;
@@ -90,8 +88,14 @@
 }
 
 .section_subheader {
+    text-shadow: white 0 0 14px;
     text-align: left;
     font-size: 45px;
+}
+
+.section_header {
+    margin-top: 25px;
+    text-shadow: white 0 0 5px;
 }
 
 .section_pros li {
@@ -252,7 +256,7 @@
 .carousel_header {
     color: black;
     text-align: right;
-    margin-right: 18%;
+    margin-right: 15%;
     font-size: 40px;
     position: relative;
 }
@@ -302,9 +306,11 @@
     text-align: justify;
     color: white;
     font-size: 25px;
+    text-shadow: black 0 0 20px;
 }
 
 .carousel_pluses li p::before {
+    text-shadow: black 0 0 20px;
     content: "";
     position: absolute;
     width: 510px;
@@ -316,6 +322,7 @@
 }
 
 .carousel_pluses li p::after {
+    box-shadow: black 0 0 20px;
     content: "";
     position: absolute;
     width: 660px;
