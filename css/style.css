@@ -85,13 +85,11 @@
 .section_subheader, .section_header, .section_partners{
     text-transform: uppercase;
     font-size: 50px;
-    /*text-shadow: rgb(0, 166, 255) 0px 0px 25px;*/
     text-align: center;
     margin-top: 25px;
 }
 
 .section_subheader {
-    /*text-shadow: rgb(0, 255, 128) 0px 0px 25px;*/
     text-align: left;
     font-size: 45px;
 }
@@ -133,7 +131,6 @@
 }
 
 .section_partners {
-    /*text-shadow: rgb(0, 255, 128) 0px 0px 25px;*/
     font-size: 45px;
 }
 
@@ -172,4 +169,159 @@
 .circle_descr {
     margin-top: 10px;
     width: 30ex;
+}
+
+.devider {
+    box-shadow: #1d6ad6 0 2px 5px;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(200, 194, 194);
+}
+
+.carousel_main {
+    box-shadow: #1d6ad6 0 0 10px;
+    border-radius: 30px;
+    width: 650px;
+    height: 500px;
+    background-color: gray;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.carousel_img{
+    height: 100%;
+}
+.carousel_rects {
+    display: flex;
+    justify-content: space-around;
+    width: 21%;
+    position:absolute;
+    bottom: 5%;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.carousel_rect {
+    width: 55px;
+    height: 7px;
+    opacity: 0.8;
+    background-color: whitesmoke;
+    cursor: pointer;
+    border: 1px solid rgb(155, 150, 150);
+}
+
+.carousel_rect:hover {
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.carousel_main::before{
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    transform: scale(0.15) rotate(90deg);
+    top:13%;
+    left:-34.5%;
+    background: url("../img/arrow.png") no-repeat; 
+}
+
+.carousel_main::after{
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    transform: scale(0.15) rotate(-90deg);
+    top:13%;
+    right:-34.5%;
+    background: url("../img/arrow.png") no-repeat; 
+}
+
+.carousel_stroke {
+    height: 10%;
+    margin-top: -1px;
+    padding-top: 2px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px gray solid;
+}
+
+.carousel_header {
+    color: black;
+    text-align: right;
+    margin-right: 18%;
+    font-size: 40px;
+    position: relative;
+}
+
+.carousel_header::before {
+    content: "";
+    color: black;
+    position: absolute;
+    width: 1200px;
+    top:-288px;
+    left:-521px;
+    height: 600px;
+    transform: scale(0.07);
+    background: url("../img/dots.png") no-repeat;
+}
+
+.carousel_wrap {
+    display: flex;
+    width: 1790px;
+}
+
+.carousel_info {
+    overflow: hidden;
+    padding: 0px;
+    padding-top: 0;
+    margin-left: 8%;
+    border-radius: 40px;
+    width: 950px;
+    border: 1px rgb(155, 155, 155) solid;
+    background:  no-repeat center/105% url('../img/vector-seamless-pattern-with-transparent-liquid-bubbles-on-dark-blue-background-abstract-background-with-lava-lamp-effect-vector-illustration-eps10_278395-582.webp');
+}
+
+.carousel_pluses {
+    margin-left: 17%;
+}
+
+.carousel_pluses li {
+    position: relative;
+    margin-top: 55px;
+}
+
+.carousel_pluses li:first-child {
+    margin-top: 40px;
+}
+
+.carousel_pluses li p{
+    text-align: justify;
+    color: white;
+    font-size: 25px;
+}
+
+.carousel_pluses li p::before {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    width: 510px;
+    top:-202px;
+    left:-260px;
+    height: 460px;
+    transform: scale(0.15);
+    background: url("../img/checkmark-PhotoRoom-PhotoRoom\ \(1\).png") no-repeat;
+}
+
+.carousel_pluses li p::after {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    width: 660px;
+    top:30px;
+    left:1px;
+    height: 1px;
+    background-color:white;
 }
