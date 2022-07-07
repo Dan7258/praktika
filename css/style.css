@@ -223,6 +223,7 @@
     height: 400px;
     transform: scale(0.15) rotate(90deg);
     top:13%;
+    transition-duration: 1s;
     left:-34.5%;
     background: url("../img/arrow.png") no-repeat; 
 }
@@ -281,7 +282,7 @@
     border-radius: 40px;
     width: 950px;
     border: 1px rgb(155, 155, 155) solid;
-    background:  no-repeat center/105% url('../img/vector-seamless-pattern-with-transparent-liquid-bubbles-on-dark-blue-background-abstract-background-with-lava-lamp-effect-vector-illustration-eps10_278395-582.webp');
+    background:  no-repeat center/105% url('../img/vector-seamless-pattern-with-transparent-liquid-bubbles-on-dark-blue-background-abstract-background-.png');
 }
 
 .carousel_pluses {
@@ -305,7 +306,6 @@
 
 .carousel_pluses li p::before {
     content: "";
-    cursor: pointer;
     position: absolute;
     width: 510px;
     top:-202px;
@@ -317,7 +317,6 @@
 
 .carousel_pluses li p::after {
     content: "";
-    cursor: pointer;
     position: absolute;
     width: 660px;
     top:30px;
